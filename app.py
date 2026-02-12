@@ -74,6 +74,7 @@ def error():
             "http.method": "GET",
             "http.path": "/error",
             "error.type": "CustomError"
+            "error": "Something went wrong"
         }
     )
     return "Error logged", 500
