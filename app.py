@@ -61,6 +61,7 @@ def home():
         extra={
             "http.method": "GET",
             "http.path": "/" 
+            "error.type": "CustomError"
         }
     )
     return "Hello from Flask + OTEL + Docker"
@@ -73,6 +74,7 @@ def error():
             "http.method": "GET",
             "http.path": "/error",
             "error.type": "CustomError"
+            "error": "Something went wrong"
         }
     )
     return "Error logged", 500
