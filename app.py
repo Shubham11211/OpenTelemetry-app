@@ -60,7 +60,7 @@ def home():
         "Home endpoint hit",
         extra={
             "http.method": "GET",
-            "http.path": "/"
+            "http.path": "/" 
         }
     )
     return "Hello from Flask + OTEL + Docker"
