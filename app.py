@@ -61,7 +61,7 @@ def home():
         extra={
             "http.method": "GET"   ,
             "http.path": "/",
-            "error.type": "CustomError"
+            
         }
     )
     return "Hello from Flask + OTEL + Docker"
