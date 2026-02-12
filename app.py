@@ -59,7 +59,7 @@ def home():
     logger.info(
         "Home endpoint hit",
         extra={
-            "http.method": "GET",
+            "http.method": "GET"   ,
             "http.path": "/",
             "error.type": "CustomError"
         }
